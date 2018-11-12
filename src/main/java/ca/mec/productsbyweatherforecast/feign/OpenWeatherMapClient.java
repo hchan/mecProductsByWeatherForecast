@@ -10,8 +10,7 @@ import feign.RequestLine;
 @FeignClient
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public interface OpenWeatherMapClient {
-//https://openweathermap.org/city/6173331
-	//http://api.openweathermap.org/data/2.5/weather?id=6173331
+	// {@link CurrentWeather} was created by http://www.jsonschema2pojo.org/
 	@RequestLine("GET /data/2.5/weather?id={cityId}&appid={appId}")
 	CurrentWeather getCurrentWeather(@Param("cityId") int openWeatherMapClientCityId, @Param("appId") String openWeatherMapClientAppId);
 }

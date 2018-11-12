@@ -10,7 +10,7 @@ import feign.RequestLine;
 @FeignClient
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public interface MecClient {
-	// {@link MecProducts} was creatd by http://www.jsonschema2pojo.org/
+	// {@link MecProducts} was created by http://www.jsonschema2pojo.org/
 	@RequestLine("GET /api/v1/products/search?keywords={keywords}")
 	MecProducts search(@Param("keywords") String keywords);
 	
