@@ -1,4 +1,4 @@
-package ca.mec.productsbyweatherforecast;
+package ca.mec.productsbyweatherforecast.config;
 
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
@@ -27,7 +27,6 @@ import lombok.ToString;
 @RequiredArgsConstructor
 public class ApplicationConfiguration {
 	private String mecBaseUrl;
-	private String openWeatherMapBaseUrl;
     private final ObjectFactory<HttpMessageConverters> messageConverters;
 
 	@Bean
@@ -37,5 +36,4 @@ public class ApplicationConfiguration {
 				.decoder(new SpringDecoder(messageConverters))
 				.target(MecClient.class, mecBaseUrl);
 	}
-
 }
