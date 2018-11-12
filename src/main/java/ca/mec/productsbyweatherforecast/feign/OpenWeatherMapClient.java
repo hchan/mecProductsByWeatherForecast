@@ -12,5 +12,5 @@ import feign.RequestLine;
 public interface OpenWeatherMapClient {
 	// {@link CurrentWeather} was created by http://www.jsonschema2pojo.org/
 	@RequestLine("GET /data/2.5/weather?id={cityId}&appid={appId}")
-	CurrentWeather getCurrentWeather(@Param("cityId") int openWeatherMapClientCityId, @Param("appId") String openWeatherMapClientAppId);
+	CurrentWeather getCurrentWeather(@Param("cityId") Integer openWeatherMapClientCityId, @Param("appId") String openWeatherMapClientAppId);
 }
