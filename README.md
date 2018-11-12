@@ -7,7 +7,7 @@ mvn install spring-boot:run
 curl http://localhost:8080/getProductsByWeatherForecast
 ```
 
-## Tests
+## Tests (JUnit)
 ```
 mvn test
 ```
@@ -17,3 +17,6 @@ mvn test
 * create spring profiles (right now the appId is in application.yaml, we might have a free appId and one that is a secret)
 
 ## Design
+* Spring Boot for the RestController
+* FeignClient for the REST Client
+* http://www.jsonschema2pojo.org/ to generate the DTO (Data Tranfer Object) from OpenWeatherMap and MEC
