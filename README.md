@@ -16,9 +16,9 @@ mvn install spring-boot:run
 curl http://localhost:8080/getProductsByWeatherForecast
 ```
 
-## Design
-* Spring Boot for the RestController
-* FeignClient for the REST Client
+## Design / Key Frameworks
+* Spring Boot
+* FeignClient
 * http://www.jsonschema2pojo.org/ to generate the DTO (Data Tranfer Object) from OpenWeatherMap and MEC
 
 ## Tests (JUnit)
