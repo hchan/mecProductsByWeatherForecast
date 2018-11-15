@@ -1,5 +1,5 @@
 # MEC Products By Weather Forecast
-* Uses the "current weather data" API to retrieve the current weather: https://openweathermap.org/current.  The JSON ( weather.main ) will contain a value like "Snow".  This will be the "search term" your service will use to search for products on mec.ca
+* Uses the "current weather data" API to retrieve the current weather: https://openweathermap.org/current and parses the JSON response ( weather.main ) to get value like "Snow".  This will be the "search term" this service will use to search for products on mec.ca
 * MEC API: Uses the product search API on mec to return a list of products based on the search term.  Example usage: 'http://www.mec.ca/api/v1/products/search?keywords=Snow'
 ## To Run
 ```
