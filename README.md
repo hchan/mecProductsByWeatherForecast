@@ -19,7 +19,7 @@ curl http://localhost:8080/getProductsByWeatherForecast
 ## Design / Key Frameworks
 * Spring Boot
 * FeignClient
-* http://www.jsonschema2pojo.org/ to generate the DTO (Data Tranfer Object) from OpenWeatherMap and MEC
+* http://www.jsonschema2pojo.org/ to generate the DTO (Data Tranfer Object) POJOs from OpenWeatherMap and MEC
 
 ## Tests (JUnit)
 ```
